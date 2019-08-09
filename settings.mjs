@@ -2,7 +2,7 @@ export default class settings {
   constructor(homeeID) {
     this.address = '';
     this.city = '';
-    this.zip = 00000;
+    this.zip = 11111;
     this.state = 'BW';
     this.latitude = '';
     this.longitude = '';
