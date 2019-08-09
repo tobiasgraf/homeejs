@@ -4,3 +4,5 @@ This mocks the homee api in a way that it can be used with the "homee in homee" 
 # WIP
 
 See app.mjs for basic example how to use this
+
+You need to use `--experimental-modules` to run this.
