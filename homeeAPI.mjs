@@ -115,6 +115,12 @@ export default class HomeeAPI extends EventEmitter {
         },
         } ));
       }
+      if ( parsed.target === 'settings') {
+        this.emit('GET:settings', []);
+        ws.send(JSON.stringify( {'settings':
+          new Settings(this.homeeID),
+        } ));
+      }
     }
     if ( parsed.method === 'put' ) {
       if ( parsed.target === 'attributes') {
