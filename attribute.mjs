@@ -19,7 +19,6 @@ export default class Attribute {
     this.changed_by_id = 0;
     this.based_on = 1;
     this.data = data;
-    this.options = [];
   }
 
   setTargetValue(targetValue) {
