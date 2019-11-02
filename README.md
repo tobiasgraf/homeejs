@@ -13,6 +13,10 @@ To connect to homeejs using the homee app, just use the ip or the `name` (dafaul
 
 There is no user management atm, just use username "homee" and any password.
 
+# Node-Red
+
+A Node-Red Plugin has been developed out of this and can be found [here](https://github.com/stfnhmplr/node-red-contrib-homee). 
+There is also a (german) [Blogpost](https://himpler.com/blog/virtuelle-geraete-in-homee-mit-node-red) about the Node-Red plugin and a [homee community thread](https://community.hom.ee/t/mal-wieder-virtuelle-geraete-jetzt-aber-richtig/24831)
 
 # Disclaimer
 This is a purely private project and has no connection with Codeatelier GmbH.
