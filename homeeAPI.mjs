@@ -37,7 +37,14 @@ export default class HomeeAPI extends EventEmitter {
   }
   start() {
     discovery.start(this.homeeID);
+
     this.server.listen(7681, '0.0.0.0');
+    this.server.on('error', function(err) {
+      console.log('homee Api Server caused an error: ' + err);
+      console.log('cannot run without api server, exiting');
+      process.exit(1);
+    });
+
     this.server.on('upgrade', this.OnHttpServerUpgrade.bind(this) );
     this.wss.on('connection', (ws) => {
       this.ws = ws;

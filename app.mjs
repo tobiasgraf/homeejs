@@ -17,6 +17,14 @@ const nodes = [
   new Node('temperature LivingRoom', 40, 3009, [ // nodeID = 40, Profile = 3009 = Temperature Sensor
     new Attribute(40, 40, 0, 0, 40, 0, 0, 0, '%C2%B0C', 0.1, 0, 5, ''), // temperature sensor
   ]),
+  new Node('Philips Hue Bewegungsmelder', 50, 4035, [ // nodeID = 50, Profile = 4035 = CANodeProfilePresenceDetectorWithTemperatureAndBrightnessSensor
+    new Attribute(50, 50, 0, 0, 40, 0, 0, 0, '%C2%B0C', 1, 0, 5, ''), // temperature sensor
+    new Attribute(51, 50, 0, 0, 1, 0, 0, 0, '', 1, 0, 76, ''), // presence alarm
+    new Attribute(52, 50, 0, 0, 50000, 0, 0, 0, 'lx', 1, 0, 76, ''), // brightness alarm
+  ]),
+  new Node('Danfoss Z Thermostat', 60, 3006, [ // nodeID = 60, Profile = 3006 = RadiatorThermostat
+    new Attribute(60, 60, 0, 0, 40, 0, 0, 0, '%C2%B0C', 1, 1, 6, ''), // target temperature
+  ]),
 
 ];
 
@@ -52,7 +60,6 @@ api.on('PUT:attributes', (attributeID, nodeID, targetValue, parsed) => {
 // });
 
 api.start();
-api.testEvent();
 
 function findAttribute(attributeID) {
   let found;

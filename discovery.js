@@ -16,6 +16,11 @@ function start(alias) {
   // Make udp server listen on port 15263.
   server.bind(15263);
 
+  server.on('error', function(err) {
+    console.log('Failed to start Discovery Server - continuing without Discovery Server. Use IP instead! ' + err);
+    return;
+  });
+
   /**
  * compares two string, case insensitive
  * @param {*} a
