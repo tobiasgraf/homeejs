@@ -8,7 +8,7 @@
     "express": "^4.17.1",
     "node-cleanup": "^2.1.2",
     "pegjs": "^0.10.0",
-    "ws": "^7.0.1"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
