@@ -196,6 +196,7 @@ export default class HomeeAPI extends EventEmitter {
           '        "data": {}\n' +
           '    }\n' +
           '}');
+          ws.close(4444, 'DEVICE_DISCONNECT');
       }
     }
   }
