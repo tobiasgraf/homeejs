@@ -9,7 +9,7 @@ You need to use `--experimental-modules` and node v10.xx to run this. (I used 10
 
 # Usage
 
-To connect to homeejs using the homee app, just use the ip or the `name` (dafault is `HOMEEJS`) you used when creating the api `new HomeeAPI('HOMEEJS');` see [app.mjs](https://github.com/tobiasgraf/homeejs/blob/master/app.mjs#L23).
+To connect to homeejs using the homee app, just use the ip or the `name` (dafault is `HOMEEJS`) you used when creating the api `new HomeeAPI('HOMEEJS');` see [app.mjs](https://github.com/tobiasgraf/homeejs/blob/master/app.mjs#L23).  
 Use a all UPPERCASE NAME, homee has some trouble when with lower case names when searching for new devices.
 
 There is no user management atm, just use username "homee" and any password.
