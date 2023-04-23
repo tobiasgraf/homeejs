@@ -28,7 +28,7 @@ const nodes = [
 
 ];
 
-const api = new HomeeAPI('homeejs');
+const api = new HomeeAPI('HOMEEJS');
 api.setNodes(nodes);
 
 // Get Nodes is handled by the api itself, but if you want to do something else here ...
